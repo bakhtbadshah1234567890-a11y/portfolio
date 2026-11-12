@@ -1,5 +1,5 @@
 section {
-  background-image: url(bag1.webp);
+  background-image: url(https://raw.githubusercontent.com/bakhtbadshah1234567890-a11y/bag/main/bag1.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ section {
 }
 
 .bbb {
-  background-image: url(bag2.webp);
+  background-image: url(https://raw.githubusercontent.com/bakhtbadshah1234567890-a11y/bag/main/bag2.webp);
   width: 100%;
   min-height: 320px;
   background-size: cover;
@@ -23,7 +23,7 @@ section {
 }
 
 .aaa {
-  background-image: url(bagaaa.webp);
+  background-image: url(https://raw.githubusercontent.com/bakhtbadshah1234567890-a11y/bag/main/bagaaa.webp);
   width: 100%;
   min-height: 320px;
   background-size: cover;
