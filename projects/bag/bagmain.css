@@ -1,22 +1,39 @@
-section{
-    background-image: url(./bag1.webp);
+section {
+  background-image: url(./bag1.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 550px;
+  min-height: 440px;
   position: relative;
 }
-.bbb{
-    background-image: url(./bag2.webp);
-    width: 600px;
-    height: 460px;
-    background-size: contain;
-    background-repeat: no-repeat;
+
+@media (min-width: 768px) {
+  section {
+    height: 550px;
+  }
 }
-.aaa{
-    background-image: url(./bagaaa.webp);
-    width: 600px;
-    height: 460px;
-    background-size: contain;
-    background-repeat: no-repeat;
+
+.bbb {
+  background-image: url(./bag2.webp);
+  width: 100%;
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aaa {
+  background-image: url(./bagaaa.webp);
+  width: 100%;
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .bbb,
+  .aaa {
+    min-height: 460px;
+  }
 }

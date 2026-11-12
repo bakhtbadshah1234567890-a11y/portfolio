@@ -11,65 +11,86 @@
 </head>
 
 <body>
-    <section>
-        <header class="flex justify-between">
-            <h1 class="h-15 w-30 mt-3 ml-5">
-                <img src="./BAGGY.avif" alt="">
-            </h1>
+    <section class="overflow-hidden">
+        <header class="relative z-20 flex items-center justify-between px-4 py-3 md:px-8 md:py-4">
+            <a href="#" class="block w-24 sm:w-30 shrink-0">
+                <img class="h-auto w-full object-contain" src="./BAGGY.avif" alt="Baggy logo">
+            </a>
 
-            <ul class="flex gap-10 mt-6 mr-25 text-[17px] font-semibold uppercase">
-                <li>HOME</li>
-                <li>PRODUCTS</li>
-                <li>COLLECTIONS</li>
-                <li>BLOG</li>
-                <li>PAGE</li>
+            <ul class="hidden lg:flex gap-10 text-[17px] font-semibold uppercase">
+                <li><a href="#" class="hover:text-[#7a4a1e]">HOME</a></li>
+                <li><a href="#" class="hover:text-[#7a4a1e]">PRODUCTS</a></li>
+                <li><a href="#" class="hover:text-[#7a4a1e]">COLLECTIONS</a></li>
+                <li><a href="#" class="hover:text-[#7a4a1e]">BLOG</a></li>
+                <li><a href="#" class="hover:text-[#7a4a1e]">PAGE</a></li>
             </ul>
-            <ul class="flex gap-10 mr-10 mt-6">
-                <li class="w-5 h-5"><svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                        <path
-                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                    </svg></li>
-                <li class="w-5 h-5"><svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                        <path
-                            d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z" />
-                    </svg></li>
-                <li class="w-6 h-6"><svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                        <path
-                            d="M378.9 80c-27.3 0-53 13.1-69 35.2l-34.4 47.6c-4.5 6.2-11.7 9.9-19.4 9.9s-14.9-3.7-19.4-9.9l-34.4-47.6c-16-22.1-41.7-35.2-69-35.2-47 0-85.1 38.1-85.1 85.1 0 49.9 32 98.4 68.1 142.3 41.1 50 91.4 94 125.9 120.3 3.2 2.4 7.9 4.2 14 4.2s10.8-1.8 14-4.2c34.5-26.3 84.8-70.4 125.9-120.3 36.2-43.9 68.1-92.4 68.1-142.3 0-47-38.1-85.1-85.1-85.1zM271 87.1c25-34.6 65.2-55.1 107.9-55.1 73.5 0 133.1 59.6 133.1 133.1 0 68.6-42.9 128.9-79.1 172.8-44.1 53.6-97.3 100.1-133.8 127.9-12.3 9.4-27.5 14.1-43.1 14.1s-30.8-4.7-43.1-14.1C176.4 438 123.2 391.5 79.1 338 42.9 294.1 0 233.7 0 165.1 0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1l15 20.7 15-20.7z" />
-                    </svg></li>
-                <li class="w-7 h-7"><svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 640 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                        <path
-                            d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
-                    </svg></li>
-            </ul>
+
+            <div class="flex items-center gap-4 sm:gap-6 lg:gap-10">
+                <ul class="flex items-center gap-4 sm:gap-6 lg:gap-10">
+                    <li class="w-5 h-5 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg></li>
+                    <li class="w-5 h-5 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z" />
+                        </svg></li>
+                    <li class="w-5 h-5 sm:w-6 sm:h-6 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M378.9 80c-27.3 0-53 13.1-69 35.2l-34.4 47.6c-4.5 6.2-11.7 9.9-19.4 9.9s-14.9-3.7-19.4-9.9l-34.4-47.6c-16-22.1-41.7-35.2-69-35.2-47 0-85.1 38.1-85.1 85.1 0 49.9 32 98.4 68.1 142.3 41.1 50 91.4 94 125.9 120.3 3.2 2.4 7.9 4.2 14 4.2s10.8-1.8 14-4.2c34.5-26.3 84.8-70.4 125.9-120.3 36.2-43.9 68.1-92.4 68.1-142.3 0-47-38.1-85.1-85.1-85.1zM271 87.1c25-34.6 65.2-55.1 107.9-55.1 73.5 0 133.1 59.6 133.1 133.1 0 68.6-42.9 128.9-79.1 172.8-44.1 53.6-97.3 100.1-133.8 127.9-12.3 9.4-27.5 14.1-43.1 14.1s-30.8-4.7-43.1-14.1C176.4 438 123.2 391.5 79.1 338 42.9 294.1 0 233.7 0 165.1 0 91.6 59.6 32 133.1 32 175.8 32 216 52.5 241 87.1l15 20.7 15-20.7z" />
+                        </svg></li>
+                    <li class="w-6 h-6 sm:w-7 sm:h-7 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path
+                                d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                        </svg></li>
+                </ul>
+                <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+                    class="lg:hidden rounded-lg p-1.5 text-gray-900 hover:bg-black/5">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
         </header>
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
 
-            <p class="text-xl uppercase tracking-wide text-gray-800 mt-30">
+        <nav id="mobile-menu" class="relative z-20 hidden border-t border-black/10 bg-[#faf6f2]/95 px-6 py-4 backdrop-blur-sm lg:hidden">
+            <ul class="flex flex-col gap-3 text-base font-semibold uppercase text-gray-900">
+                <li><a href="#" class="block py-1 hover:text-[#7a4a1e]">HOME</a></li>
+                <li><a href="#" class="block py-1 hover:text-[#7a4a1e]">PRODUCTS</a></li>
+                <li><a href="#" class="block py-1 hover:text-[#7a4a1e]">COLLECTIONS</a></li>
+                <li><a href="#" class="block py-1 hover:text-[#7a4a1e]">BLOG</a></li>
+                <li><a href="#" class="block py-1 hover:text-[#7a4a1e]">PAGE</a></li>
+            </ul>
+        </nav>
+
+        <div class="relative z-10 flex min-h-[380px] md:min-h-[460px] flex-col items-center justify-center px-4 pb-10 pt-8 text-center">
+
+            <p class="text-sm sm:text-lg md:text-xl uppercase tracking-wide text-gray-800">
                 Handbag Collection 2025
             </p>
 
-            <h1 class="mt-6 text-8xl font-semibold leading-tight text-gray-900 ">
+            <h1 class="mt-4 md:mt-6 text-4xl sm:text-6xl md:text-8xl font-semibold leading-tight text-gray-900">
                 Carry class with
             </h1>
-            <h1 class="mt-6 text-8xl font-semibold leading-tight text-gray-900">
+            <h1 class="mt-1 md:mt-4 text-4xl sm:text-6xl md:text-8xl font-semibold leading-tight text-gray-900">
                 every step
             </h1>
 
-            <a href="#" class="mt-10 rounded-lg bg-[#7a4a1e] px-8 py-4 text-xl font-semibold uppercase text-white">
+            <a href="#" class="mt-6 md:mt-10 rounded-lg bg-[#7a4a1e] px-6 py-3 md:px-8 md:py-4 text-base md:text-xl font-semibold uppercase text-white hover:bg-[#653c17]">
                 Shop Now
             </a>
 
         </div>
     </section>
-    <div class="bg-orange-50 flex gap-35 justify-center p-5">
-        <div class="flex gap-3">
+    <div class="bg-orange-50 px-6 py-6 md:px-10">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+        <div class="flex items-start gap-3 sm:justify-center">
             <div class="">
-                <svg class="w-6 h-6 mt-3" xmlns="http://www.w3.org/2000/svg"
+                <svg class="w-6 h-6 mt-1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                     <path
                         d="M64 80c-8.8 0-16 7.2-16 16l0 288c0 8.8 7.2 16 16 16l3.3 0c10.4-36.9 44.4-64 84.7-64s74.2 27.1 84.7 64l102.6 0c4.9-17.4 15.1-32.7 28.7-43.9L368 96c0-8.8-7.2-16-16-16L64 80zm3.3 368L64 448c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l288 0c35.3 0 64 28.7 64 64l0 32 55.4 0c17 0 33.3 6.7 45.3 18.7l40.6 40.6c12 12 18.7 28.3 18.7 45.3L576 384c0 35.3-28.7 64-64 64l-3.3 0c-10.4 36.9-44.4 64-84.7 64s-74.2-27.1-84.7-64l-102.6 0c-10.4 36.9-44.4 64-84.7 64s-74.2-27.1-84.7-64zM416 256l112 0 0-23.4c0-4.2-1.7-8.3-4.7-11.3l-40.6-40.6c-3-3-7.1-4.7-11.3-4.7l-55.4 0 0 80zm0 48l0 32.4c2.6-.2 5.3-.4 8-.4 40.3 0 74.2 27.1 84.7 64l3.3 0c8.8 0 16-7.2 16-16l0-80-112 0zM152 464a40 40 0 1 0 0-80 40 40 0 1 0 0 80zm272 0a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
@@ -84,9 +105,9 @@
                 </p>
             </div>
         </div>
-        <div class="flex gap-3">
+        <div class="flex items-start gap-3 sm:justify-center">
             <div class="">
-                <svg class="w-6 h-6 mt-3" xmlns="http://www.w3.org/2000/svg"
+                <svg class="w-6 h-6 mt-1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 384 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                     <path
                         d="M128 96c0-35.3 28.7-64 64-64 31.7 0 58 23 63.1 53.3 2.9 17.4 19.4 29.2 36.9 26.3s29.2-19.4 26.3-36.9C308.1 14.1 255.5-32 192-32 121.3-32 64 25.3 64 96l0 64c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64l-192 0 0-64z" />
@@ -101,9 +122,9 @@
                 </p>
             </div>
         </div>
-        <div class="flex gap-3">
+        <div class="flex items-start gap-3 sm:justify-center">
             <div class="">
-                <svg class="w-6 h-6 mt-3" xmlns="http://www.w3.org/2000/svg"
+                <svg class="w-6 h-6 mt-1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                     <path
                         d="M192 128a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM448 384a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM438.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-384 384c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l384-384z" />
@@ -118,9 +139,9 @@
                 </p>
             </div>
         </div>
-        <div class="flex gap-3">
+        <div class="flex items-start gap-3 sm:justify-center">
             <div class="">
-                <svg class="w-6 h-6 mt-3" xmlns="http://www.w3.org/2000/svg"
+                <svg class="w-6 h-6 mt-1" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                     <path
                         d="M203.7 512.9s0 0 0 0l-37.8 26.7c-7.3 5.2-16.9 5.8-24.9 1.7S128 529 128 520l0-72-32 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l320 0c53 0 96 43 96 96l0 224c0 53-43 96-96 96l-120.4 0-91.9 64.9zm64.3-104.1c8.1-5.7 17.8-8.8 27.7-8.8L416 400c26.5 0 48-21.5 48-48l0-224c0-26.5-21.5-48-48-48L96 80c-26.5 0-48 21.5-48 48l0 224c0 26.5 21.5 48 48 48l56 0c10.4 0 19.3 6.6 22.6 15.9 .9 2.5 1.4 5.2 1.4 8.1l0 49.7c32.7-23.1 63.3-44.7 91.9-64.9z" />
@@ -135,60 +156,61 @@
                 </p>
             </div>
         </div>
+        </div>
     </div>
-    <div>
-        <h1 class=" text-[40px] font-semibold text-center mt-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-7">
+        <h1 class="text-3xl md:text-[40px] font-semibold text-center mt-12 md:mt-20">
             shop by category
         </h1>
-        <div class="mt-10 p-7 flex gap-10 ">
+        <div class="mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
             <div>
                 <div>
-                    <img class="w-65 h-80 rounded-t-lg" src="./barrel bag.jpg" alt="">
+                    <img class="w-full h-72 sm:h-80 object-cover rounded-t-lg" src="./barrel bag.jpg" alt="Barrel Bag">
                 </div>
-                <div class="w-65 h-15 bg-orange-50 rounded-b-lg">
-                    <h1 class="font-semibold text-lg ml-22">
+                <div class="w-full py-3 bg-orange-50 rounded-b-lg text-center">
+                    <h1 class="font-semibold text-lg">
                         Barrel Bag
                     </h1>
-                    <p class="ml-23">
+                    <p>
                         12+ items
                     </p>
                 </div>
             </div>
             <div>
                 <div>
-                    <img class="w-65 h-80 rounded-t-lg" src="./belt bag.jpg" alt="">
+                    <img class="w-full h-72 sm:h-80 object-cover rounded-t-lg" src="./belt bag.jpg" alt="Belt Bag">
                 </div>
-                <div class="w-65 h-15 bg-orange-50 rounded-b-lg">
-                    <h1 class="font-semibold text-lg ml-22">
+                <div class="w-full py-3 bg-orange-50 rounded-b-lg text-center">
+                    <h1 class="font-semibold text-lg">
                         Belt Bag
                     </h1>
-                    <p class="ml-23">
+                    <p>
                         12+ items
                     </p>
                 </div>
             </div>
             <div>
                 <div>
-                    <img class="w-65 h-80 rounded-t-lg" src="./hogo bag.jpg" alt="">
+                    <img class="w-full h-72 sm:h-80 object-cover rounded-t-lg" src="./hogo bag.jpg" alt="Hogo Bag">
                 </div>
-                <div class="w-65 h-15 bg-orange-50 rounded-b-lg">
-                    <h1 class="font-semibold text-lg ml-22">
+                <div class="w-full py-3 bg-orange-50 rounded-b-lg text-center">
+                    <h1 class="font-semibold text-lg">
                         Hogo Bag
                     </h1>
-                    <p class="ml-23">
+                    <p>
                         12+ items
                     </p>
                 </div>
             </div>
             <div>
                 <div>
-                    <img class="w-65 h-80 rounded-t-lg" src="./tour bag.jpg" alt="">
+                    <img class="w-full h-72 sm:h-80 object-cover rounded-t-lg" src="./tour bag.jpg" alt="Tour Bag">
                 </div>
-                <div class="w-65 h-15 bg-orange-50 rounded-b-lg">
-                    <h1 class="font-semibold text-lg ml-22">
+                <div class="w-full py-3 bg-orange-50 rounded-b-lg text-center">
+                    <h1 class="font-semibold text-lg">
                         Tour Bag
                     </h1>
-                    <p class="ml-23">
+                    <p>
                         12+ items
                     </p>
                 </div>
@@ -197,59 +219,56 @@
 
 
     </div>
-    <div class="flex flex-col items-center justify-center mt-20">
+    <div class="flex flex-col items-center justify-center mt-14 md:mt-20 px-4 sm:px-6 text-center">
         <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
             <path
                 d="M214.7 .7c17.3 3.7 28.3 20.7 24.6 38l-19.1 89.3 126.5 0 22-102.7C372.4 8 389.4-3 406.7 .7s28.3 20.7 24.6 38L412.2 128 480 128c17.7 0 32 14.3 32 32s-14.3 32-32 32l-81.6 0-27.4 128 67.8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-81.6 0-22 102.7c-3.7 17.3-20.7 28.3-38 24.6s-28.3-20.7-24.6-38l19.1-89.3-126.5 0-22 102.7c-3.7 17.3-20.7 28.3-38 24.6s-28.3-20.7-24.6-38L99.8 384 32 384c-17.7 0-32-14.3-32-32s14.3-32 32-32l81.6 0 27.4-128-67.8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l81.6 0 22-102.7C180.4 8 197.4-3 214.7 .7zM206.4 192l-27.4 128 126.5 0 27.4-128-126.5 0z" />
         </svg>
-        <h1 class="mt-10 text-[25px] font-bold">
+        <h1 class="mt-6 md:mt-10 text-xl sm:text-[25px] font-bold">
             SINCE 1987 ABOUT BAGGY STORE
         </h1>
-        <p class="mt-6 text-[20px] text-gray-600">
-            Make sure handbag stylish has similar scale it’s all about scale, <br> proportion, measuring, being
-            conscious of the overall whether
-        </p>
-        <p class="text-[20px] text-gray-600">
-            fashionable or functional, the handbag.
+        <p class="mt-4 md:mt-6 max-w-2xl text-base sm:text-[20px] text-gray-600">
+            Make sure handbag stylish has similar scale it’s all about scale, proportion, measuring, being
+            conscious of the overall whether fashionable or functional, the handbag.
         </p>
     </div>
-    <div class="flex gap-7 p-5 mt-20">
-        <div class="bbb rounded-lg">
-            <p class="text-[17px] font-normal text-gray-900 mt-22 ml-10 ">
+    <div class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-7 px-4 sm:px-5 mt-14 md:mt-20">
+        <div class="bbb rounded-lg flex flex-col justify-center p-6 sm:p-10">
+            <p class="text-sm sm:text-[17px] font-normal text-gray-900">
                 MAKE DREAMS COME TRUE
             </p>
-            <h1 class="text-[30px] font-bold ml-10">
+            <h1 class="mt-2 text-2xl sm:text-[30px] font-bold">
                 Cross body<br>
                 for handbag
             </h1>
-            <p class="ml-10 mt-8">
+            <p class="mt-5 sm:mt-8 text-base">
                 Starting price : $66.00
             </p>
-            <button class="ml-10 ml-10 mt-10 rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold">
+            <button class="mt-6 sm:mt-10 rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold hover:bg-amber-900">
                 SHOP NOW
             </button>
 
         </div>
-        <div class="aaa rounded-lg">
-            <div class="text-white mt-50 ">
-                <p class="font-semibold text-[30px] ml-45">
+        <div class="aaa rounded-lg flex flex-col justify-end items-end text-right p-6 sm:p-10">
+            <div class="text-white">
+                <p class="font-semibold text-xl sm:text-[30px]">
                     #Deal of the day
                 </p>
-                <h1 class="text-[40px] mr-20 ml-35 mt-5 font-bold">
+                <h1 class="text-2xl sm:text-[40px] mt-2 sm:mt-4 font-bold">
                     A duffel handbag
                 </h1>
-                <button class="uppercase  rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold ml-55 mt-5">
+                <button class="uppercase rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold mt-5 hover:bg-amber-900">
                     Shop now
                 </button>
             </div>
 
         </div>
     </div>
-    <div class="mt-24 px-11 pb-16">
-        <h2 class="text-center text-[56px] font-bold text-neutral-800">New arrivals</h2>
+    <div class="mx-auto max-w-7xl mt-16 md:mt-24 px-4 sm:px-11 pb-12 md:pb-16">
+        <h2 class="text-center text-3xl sm:text-4xl md:text-[56px] font-bold text-neutral-800">New arrivals</h2>
 
-        <div class="mt-16 grid grid-cols-4 gap-12">
+        <div class="mt-10 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
 
             <div class="text-center">
                 <div class="flex h-[287px] items-center justify-center rounded-2xl bg-[#faf7f2]">
@@ -258,115 +277,115 @@
                 <h3 class="mt-6 text-2xl text-neutral-800">Bucket handbag</h3>
                 <p class="mt-4 text-2xl text-neutral-800">$10.00</p>
                 <div class="mt-4 text-3xl tracking-wider text-orange-500">☆☆☆☆☆</div>
-                <button class=" mt-10 rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold">
+                <button class="mt-6 md:mt-10 rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold hover:bg-amber-900">
                     Shop now
                 </button>
             </div>
 
             <div class="text-center">
                 <div class="flex h-[287px] items-center justify-center rounded-2xl bg-[#faf7f2]">
-                    <img class="h-[280px] object-contain" src="./bag4.webp" alt="Tote handbag">
+                    <img class="h-[240px] sm:h-[280px] object-contain" src="./bag4.webp" alt="Tote handbag">
                 </div>
                 <h3 class="mt-6 text-2xl text-neutral-800">Tote handbag</h3>
                 <p class="mt-4 text-2xl text-neutral-800">$28.00</p>
                 <div class="mt-4 text-3xl tracking-wider text-orange-500">☆☆☆☆☆</div>
-                <button class=" mt-10 rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold">
+                <button class="mt-6 md:mt-10 rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold hover:bg-amber-900">
                     Shop now
                 </button>
             </div>
 
             <div class="text-center">
                 <div class="flex h-[287px] items-center justify-center rounded-2xl bg-[#faf7f2]">
-                    <img class="h-[280px] object-contain" src="./bag5.webp" alt="Studs handbag">
+                    <img class="h-[240px] sm:h-[280px] object-contain" src="./bag5.webp" alt="Studs handbag">
                 </div>
                 <h3 class="mt-6 text-2xl text-neutral-800">Studs handbag</h3>
                 <p class="mt-4 text-2xl text-neutral-800">$30.00</p>
                 <div class="mt-4 text-3xl tracking-wider text-orange-500">☆☆☆☆☆</div>
-                <button class=" mt-10 rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold">
+                <button class="mt-6 md:mt-10 rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold hover:bg-amber-900">
                     Shop now
                 </button>
             </div>
 
             <div class="text-center">
                 <div class="flex h-[287px] items-center justify-center rounded-2xl bg-[#faf7f2]">
-                    <img class="h-[280px] object-contain" src="./bag6.webp" alt="Pocket handbag">
+                    <img class="h-[240px] sm:h-[280px] object-contain" src="./bag6.webp" alt="Pocket handbag">
                 </div>
                 <h3 class="mt-6 text-2xl text-neutral-800">Pocket handbag</h3>
                 <p class="mt-4 text-2xl text-neutral-800">$8.00</p>
                 <div class="mt-4 text-3xl tracking-wider text-orange-500">☆☆☆☆☆</div>
-                <button class=" mt-10 rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold">
+                <button class="mt-6 md:mt-10 rounded-lg bg-amber-800 text-white h-12 w-40 font-semibold hover:bg-amber-900">
                     Shop now
                 </button>
             </div>
 
         </div>
     </div>
-    <div class="mt-24 px-10 pb-16">
-        <div class="grid grid-cols-2 items-center gap-16">
+    <div class="mx-auto max-w-7xl mt-14 md:mt-24 px-4 sm:px-10 pb-12 md:pb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
 
             <div>
-                <h2 class="text-[44px] font-bold leading-[0.95] text-neutral-800">
+                <h2 class="text-3xl sm:text-[44px] font-bold leading-tight text-neutral-800">
                     Frequently ask<br>questions
                 </h2>
 
-                <div class="mt-16 border-t border-gray-200">
+                <div class="mt-8 md:mt-16 border-t border-gray-200">
 
-                    <details class="group border-b border-gray-200 py-6">
+                    <details class="group border-b border-gray-200 py-5 md:py-6">
                         <summary
-                            class="flex cursor-pointer list-none items-center justify-between text-2xl font-semibold text-neutral-800">
+                            class="flex cursor-pointer list-none items-center justify-between text-lg sm:text-2xl font-semibold text-neutral-800">
                             Return policy
-                            <svg class="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+                            <svg class="h-4 w-4 shrink-0 transition-transform duration-300 group-open:rotate-180"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path fill="currentColor"
                                     d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                             </svg>
                         </summary>
-                        <p class="mt-4 text-lg text-gray-600">
+                        <p class="mt-4 text-base sm:text-lg text-gray-600">
                             Aap koi bhi item 30 din ke andar wapis kar sakte hain.
                         </p>
                     </details>
 
-                    <details class="group border-b border-gray-200 py-6">
+                    <details class="group border-b border-gray-200 py-5 md:py-6">
                         <summary
-                            class="flex cursor-pointer list-none items-center justify-between text-2xl font-semibold text-neutral-800">
+                            class="flex cursor-pointer list-none items-center justify-between text-lg sm:text-2xl font-semibold text-neutral-800">
                             Shipping
-                            <svg class="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+                            <svg class="h-4 w-4 shrink-0 transition-transform duration-300 group-open:rotate-180"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path fill="currentColor"
                                     d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                             </svg>
                         </summary>
-                        <p class="mt-4 text-lg text-gray-600">
+                        <p class="mt-4 text-base sm:text-lg text-gray-600">
                             $75 se zyada ke order par shipping bilkul free hai.
                         </p>
                     </details>
 
-                    <details class="group border-b border-gray-200 py-6">
+                    <details class="group border-b border-gray-200 py-5 md:py-6">
                         <summary
-                            class="flex cursor-pointer list-none items-center justify-between text-2xl font-semibold text-neutral-800">
+                            class="flex cursor-pointer list-none items-center justify-between text-lg sm:text-2xl font-semibold text-neutral-800">
                             Manufacturing
-                            <svg class="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+                            <svg class="h-4 w-4 shrink-0 transition-transform duration-300 group-open:rotate-180"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path fill="currentColor"
                                     d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                             </svg>
                         </summary>
-                        <p class="mt-4 text-lg text-gray-600">
+                        <p class="mt-4 text-base sm:text-lg text-gray-600">
                             Hamare bags 1987 se asli leather se haath se banaye jate hain.
                         </p>
                     </details>
 
-                    <details class="group border-b border-gray-200 py-6">
+                    <details class="group border-b border-gray-200 py-5 md:py-6">
                         <summary
-                            class="flex cursor-pointer list-none items-center justify-between text-2xl font-semibold text-neutral-800">
+                            class="flex cursor-pointer list-none items-center justify-between text-lg sm:text-2xl font-semibold text-neutral-800">
                             Delivery of items
-                            <svg class="h-4 w-4 transition-transform duration-300 group-open:rotate-180"
+                            <svg class="h-4 w-4 shrink-0 transition-transform duration-300 group-open:rotate-180"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path fill="currentColor"
                                     d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                             </svg>
                         </summary>
-                        <p class="mt-4 text-lg text-gray-600">
+                        <p class="mt-4 text-base sm:text-lg text-gray-600">
                             Delivery mein aam tor par 3 se 5 din lagte hain.
                         </p>
                     </details>
@@ -375,17 +394,13 @@
             </div>
 
             <div class="overflow-hidden rounded-2xl bg-[#f8eee4]">
-                <img class="h-[580px] w-full object-cover object-top" src="./belt bag.jpg" alt="Model with belt bag">
+                <img class="h-[340px] sm:h-[460px] lg:h-[580px] w-full object-cover object-top" src="./belt bag.jpg" alt="Model with belt bag">
             </div>
 
         </div>
-        <p>
-            <br>
-            <br>
-        </p>
     </div>
-    <div>
-        <video class="w-500 h-100" width="540" controls poster="./bag1.webp">
+    <div class="mx-auto max-w-7xl px-4 sm:px-10">
+        <video class="w-full h-auto max-h-[500px] rounded-2xl object-cover" controls poster="./bag1.webp">
             <source src="./bagvideo.mp4" type="video/mp4">
 
         </video>
@@ -446,11 +461,11 @@
                 <h2 class="text-2xl font-semibold md:text-6xl">Join newsletter</h2>
                 <p class="mt-2 text-base md:text-lg">Unlock special discounts just for subscribers!</p>
 
-                <form class="mt-6 flex w-full max-w-2xl overflow-hidden rounded-xl">
+                <form class="mt-6 flex w-full max-w-2xl flex-col gap-2 sm:flex-row sm:gap-0 sm:overflow-hidden sm:rounded-xl">
                     <input type="email" placeholder="Enter your email" required
-                        class="w-full bg-white px-6 py-4 text-neutral-800 placeholder-neutral-400 outline-none">
+                        class="w-full rounded-xl sm:rounded-none bg-white px-5 py-3.5 sm:px-6 sm:py-4 text-neutral-800 placeholder-neutral-400 outline-none">
                     <button type="submit"
-                        class="bg-neutral-900 px-6 py-4 text-base font-bold uppercase text-white hover:bg-black md:px-9 md:text-lg">
+                        class="rounded-xl sm:rounded-none bg-neutral-900 px-6 py-3.5 sm:py-4 text-base font-bold uppercase text-white hover:bg-black md:px-9 md:text-lg">
                         Subscribe
                     </button>
                 </form>
@@ -463,9 +478,7 @@
             <!-- Brand -->
             <div>
                 <img class="flex items-center gap-1 text-3xl font-bold text-[#85501e] w-30 h-12" src="./BAGGY.avif"
-                    alt="">
-
-                </a>
+                    alt="Baggy logo">
                 <p class="mt-8 max-w-[260px] text-lg leading-8">
                     As part of our mission create space for women to express their suality without shame fear
                 </p>
@@ -592,6 +605,16 @@
 
 
 
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                menuBtn.setAttribute('aria-expanded', String(!isHidden));
+            });
+        }
+    </script>
 </body>
 
 </html>
