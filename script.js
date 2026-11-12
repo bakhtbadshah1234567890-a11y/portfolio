@@ -216,11 +216,11 @@ tabBtns.forEach(btn => {
 // Animate bars on page load for active panel
 setTimeout(animateSkillBars, 500);
 
-/* ---- CONTACT FORM ---- */
+/* ---- CONTACT FORM (FORMSPREE AJAX) ---- */
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const btn = contactForm.querySelector('button[type="submit"]');
@@ -228,19 +228,44 @@ contactForm.addEventListener('submit', (e) => {
 
   btn.innerHTML = '<span>Sending...</span>';
   btn.disabled = true;
+  formStatus.textContent = '';
+  formStatus.className = 'form-status';
 
-  // Simulate send (replace with real email service like EmailJS or Formspree)
-  setTimeout(() => {
-    formStatus.textContent = '✅ Message sent! I will get back to you soon.';
-    formStatus.className = 'form-status success';
-    contactForm.reset();
+  const formData = new FormData(contactForm);
+
+  try {
+    const response = await fetch('https://formspree.io/f/mrpqbaqv', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      formStatus.textContent = '✅ Message sent successfully! I will get back to you soon.';
+      formStatus.className = 'form-status success';
+      contactForm.reset();
+    } else {
+      const data = await response.json();
+      if (data && data.errors) {
+        formStatus.textContent = `❌ ${data.errors.map(err => err.message).join(', ')}`;
+      } else {
+        formStatus.textContent = '❌ Oops! There was a problem submitting your message.';
+      }
+      formStatus.className = 'form-status error';
+    }
+  } catch (err) {
+    formStatus.textContent = '❌ Network error. Please check your connection or email me directly.';
+    formStatus.className = 'form-status error';
+  } finally {
     btn.innerHTML = originalText;
     btn.disabled = false;
 
     setTimeout(() => {
       formStatus.className = 'form-status';
-    }, 5000);
-  }, 1500);
+    }, 7000);
+  }
 });
 
 /* ---- SMOOTH SCROLL FOR ANCHOR LINKS ---- */
