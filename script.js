@@ -50,9 +50,9 @@ function updateActiveNav() {
 /* ---- HERO TYPING EFFECT ---- */
 const roles = [
   'MERN Stack Developer',
-  'BSc Cyber Security Student',
   'Full-Stack Web Developer',
   'React.js Developer',
+  'Node.js & Express Developer',
   'Problem Solver & Builder',
 ];
 let roleIndex = 0;
@@ -288,7 +288,7 @@ console.log(`
 %cHey there, fellow developer! 👋
 I see you're checking the source code — nice move!
 I'm Muhammad Bakht Baidar.
-BSc Cyber Security + MERN Stack Developer.
+MERN Stack & Full-Stack Web Developer.
 Let's connect! 🚀
 `, 
 'color: #00f5ff; font-family: monospace; font-size: 14px;',
